@@ -1,0 +1,218 @@
+<!DOCTYPE html> <html lang="pt~br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça o seu pedido </title>
+
+    <style>
+    #fundo{
+        background-color: rgb(196, 145, 69);
+    }
+
+    .titulo{
+font-size: 35px;
+color:rgb(108, 8, 8);;
+display:flex ;
+justify-content: center;
+}
+
+.nomes{
+    font-size: 20px;
+    color:black;
+    display:flex ;
+    justify-content: center;
+}
+
+.tt2{
+color: rgba(120, 52, 0, 0.801);
+font-size: 45px;
+display:flex ;
+justify-content: center;  
+
+}
+.qnt{
+    font-size: 20px;
+    color:black;
+    display:flex ;
+    justify-content: center;
+}
+
+ #botao{
+    font-size: 20px;
+    color:black;
+    display:flex ;
+    justify-content: center;
+}
+ 
+</style>
+
+</head>
+<body id="fundo">
+     <form>
+
+ <h1 class="titulo"> Escolha as opções do seu pedido:</h1>
+
+<h2 class="tt2">Rodízio</h2>
+
+ <p class=" nomes">
+Fritas: <input type="checkbox" > </p>
+ 
+<p class=" nomes">
+Batata Rustica:<input type="checkbox" > </p>
+
+<p class=" nomes">
+Mandioquinha:<input type="checkbox" > </p>
+
+<p class=" nomes">
+Torresmo:<input type="checkbox" > </p >
+
+<p class=" nomes">
+Linguiça Calabresa:<input type="checkbox" o></p >  
+
+<p class=" nomes">
+Feijão Tropeiro:<input type="checkbox" ></p >  
+
+<p class=" nomes">
+ Costelinha:<input type="checkbox" ></p >
+    
+ <p class=" nomes">
+ Frango a Passarinho:<input type="checkbox" ></p >     
+
+ <p class="qnt ">
+    Quantidade:<input type="number" ></p >     
+   
+ <h2 class="tt2"> Rodízio de Doces</h2>
+              
+    <p class=" nomes">
+    Doce de Leite:<input type="checkbox" ></p >  
+
+    <p class=" nomes">
+    Doce de Abobora:<input type="checkbox" ></p >  
+    
+    <p class=" nomes">
+    Cocada Cremosa:<input type="checkbox" ></p >  
+
+    <p class=" nomes">
+    Arroz Doce:<input type="checkbox" ></p >  
+        
+    <p class="qnt ">
+        Quantidade:<input type="number" ></p >      
+    
+        <h2 class="tt2">Bebidas</h2>
+
+    <p class=" nomes">
+        Água:<input type="checkbox" ></p >           
+        <p class="qnt ">
+    Quantidade:<input type="number" ></p >  
+    
+    <p class=" nomes">
+    Água c/ Gás:<input type="checkbox" ></p >  
+    <p class="qnt ">
+     Quantidade:<input type="number" ></p >  
+
+     <p class="nomes"> Coca Cola</p>
+
+     <p class=" nomes">lata de 300ml 3,50:
+        <input type="checkbox" ></p >  
+    <p class="qnt ">
+    Quantidade:<input type="number" ></p > 
+
+    <p class=" nomes">Garrrafa de 500ml: 5,50
+        <input type="checkbox" ></p >  
+    <p class="qnt ">
+     Quantidade:<input type="number" ></p > 
+
+    <p class=" nomes"> Garrrafa de 1L: 8,00
+        <input type="checkbox" ></p >  
+    <p class="qnt ">
+     Quantidade:<input type="number" ></p > 
+
+    <p class=" nomes"> Garrrafa  de 2L: 10,00
+            <input type="checkbox" ></p >  
+    <p class="qnt ">
+         Quantidade:<input type="number" ></p >  
+    
+         <p class="nomes"> Coca Cola zero</p>
+
+         <p class=" nomes">Lata de 300ml 4,50:
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+        Quantidade:<input type="number" ></p > 
+    
+        <p class=" nomes">Garrrafa de 500ml 6,00: 
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+         Quantidade:<input type="number" ></p > 
+    
+        <p class=" nomes"> Garrrafa de 1L: 8,50
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+         Quantidade:<input type="number" ></p > 
+    
+         <p class="nomes"> sucos naturais</p>
+
+         <p class="nomes"> a partir de $8,00 a garrafa de 500ml</p>
+
+         <p class=" nomes"> Acerola
+            <input type="checkbox" ></p >  
+    <p class="qnt ">
+         Quantidade:<input type="number" ></p >  
+    
+         
+         <p class=" nomes"> Abacaxi
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+        Quantidade:<input type="number" ></p > 
+    
+        <p class=" nomes"> Caju
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+         Quantidade:<input type="number" ></p > 
+    
+        <p class=" nomes">Laranja
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+         Quantidade:<input type="number" ></p > 
+    
+        <p class=" nomes">Limonada Suiça 
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+         Quantidade:<input type="number" ></p > 
+
+         <p class=" nomes">Manga
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+         Quantidade:<input type="number" ></p > 
+
+         <p class=" nomes">Maracúja
+            <input type="checkbox" ></p >  
+        <p class="qnt ">
+         Quantidade:<input type="number" ></p > 
+        <p  class="nomes">
+          <input type="submit" onclick="calcular()" id="botao"> 
+        </p>
+     </form>
+
+
+<script>
+
+
+function calcular() {
+    
+}
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+</body>
+</html>
